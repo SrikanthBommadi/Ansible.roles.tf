@@ -12,7 +12,7 @@
 - name: include common role
   include_role:
     name: common
-    #tasks_from: main
+    tasks_from: main
 
 
 
@@ -22,5 +22,5 @@
     src: expense.conf.j2
     dest: /etc/nginx/default.d/expense.conf
   notify: 
-  - Restart Nginx
+  - Restart nginx
   
